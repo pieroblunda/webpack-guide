@@ -28,10 +28,13 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.css$/,
+        test: /\.styl$/,
         use: [
           'style-loader',
-          'css-loader'
+          'css-loader',
+          {
+            loader: 'stylus-loader'
+          }
         ]
       },{
         test: /\.(png|svg|jpg|gif)$/,

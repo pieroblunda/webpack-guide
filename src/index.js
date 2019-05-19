@@ -1,8 +1,8 @@
 import _ from 'lodash';
-import './style.css';
 import Icon from './icon.png';
 import Data from './data.xml';
 import printMe from './print.js';
+var css = require('./main.styl');
 
 function component() {
   const element = document.createElement('div');
